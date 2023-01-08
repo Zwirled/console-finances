@@ -1,0 +1,78 @@
+:root {
+    --white: #fff;
+    --turqoise: #8aecbb;
+    --navy: #190a73;
+    --selection: rgba(26, 10, 115, 0.2);
+}
+
+html {
+    padding: 25px;
+}
+
+::selection {
+    background: var(--selection);
+}
+
+body {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    background-color: var(--turqoise);
+    text-align: center;
+}
+
+header {
+    padding: 25px;
+}
+
+section {
+    padding: 25px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--navy);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.how-to-use {
+    background-color: var(--navy);
+}
+
+h2 {
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 200;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    h2 {
+        font-size: 90px;
+    }
+}
