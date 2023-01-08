@@ -95,3 +95,15 @@ console.log("Financial Analysis"); // Title for Console Finance Calculation
 console.log("------------------------"); // Seperator
 console.log("Total Months: " + totalMonths); // Output total months in the array
 // ---------- //
+
+let netTotal = 0; // A variable to store the net total
+
+// Loop through the totalMonths and add the total together.
+// Starting iteration: 0 / Stopping condition: Number of months / Increase iteration: +1
+for (let i = 0; i < totalMonths; i++) {
+    netTotal += finances[i][1]; // net total equals net total plus all finances
+}
+
+// CONSOLE OUTPUT //
+console.log('Net Total: $' + netTotal); // Output the net total of the array
+// ---------- //
