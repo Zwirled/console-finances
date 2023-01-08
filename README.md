@@ -9,7 +9,7 @@ Using a supplied variable of an array within an array, I have created various Ja
 
 N/A
 
-View the web application at: https://zwirled.github.io/console-finance/
+View the web application at: https://zwirled.github.io/console-finances/
 
 ## Usage
 
