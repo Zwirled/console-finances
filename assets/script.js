@@ -112,12 +112,21 @@ finances.unshift(['Dec-2009', 0]); // Extra element to the front of the array, w
 
 let totalDifference = 0; // A variable to store the sum the difference
 
+let greatestIncrease = 0; // A variable to store the greatest profit increase
+let greatestIncreaseMonth; // A variable to store the month with the greatest profit increase
+
 // Loop through the current months income and minus the previous months.
 // Starting iteration: 0 / Stopping condition: Number of months / Increase iteration: +1
 for (let i = 0; i < totalMonths; i++) {
 
     let difference = finances[i + 1][1] - finances[i][1]; // Find the difference in profit each month
     totalDifference += difference; // Total difference equals 0 + all differences
+
+    // Find the biggest increase in profit
+    if (greatestIncrease < difference) {
+        greatestIncrease = difference;
+        greatestIncreaseMonth = finances[i][0];
+    }
 }
 
 let averageDifference = totalDifference / totalMonths; // Array to store the average change in profit
@@ -125,4 +134,5 @@ averageDifference = Math.round(averageDifference * 100) / 100; // Round the aver
 
 // CONSOLE OUTPUT //
 console.log('Average Change (if Dec-2009 was $0): $' + averageDifference); // Output the average change in profit
+console.log("Greatest Increase in Profits: " + greatestIncreaseMonth + " $" + greatestIncrease); // Output the greatest profit increase
 // ---------- //
