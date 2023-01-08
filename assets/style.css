@@ -1,8 +1,7 @@
 :root {
-    --white: #fff;
     --turqoise: #8aecbb;
     --navy: #190a73;
-    --selection: rgba(26, 10, 115, 0.2);
+    --selection: rgba(255, 255, 255, 0.2);
 }
 
 html {
@@ -49,7 +48,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    color: var(--white);
+    color: var(--turqoise);
     font-weight: 200;
 }
 
