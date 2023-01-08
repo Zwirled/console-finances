@@ -86,3 +86,12 @@ let finances = [
     ['Jan-2017', 138230],
     ['Feb-2017', 671099]
 ];
+
+
+let totalMonths = finances.length; // A varible to store the finance length
+
+// CONSOLE OUTPUT //
+console.log("Financial Analysis"); // Title for Console Finance Calculation
+console.log("------------------------"); // Seperator
+console.log("Total Months: " + totalMonths); // Output total months in the array
+// ---------- //
